@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Formulário de Contato</title>
+    <link href="_css/main.css" rel="stylesheet" type="text/css"/>
+</h:head>
+<h:body>
+    <h:form>
+        <h:outputLabel for="nome" value="Nome:" />
+        <h:inputText id="nome" value="#{pessoaBean.pessoa.nome}" required="true" />
+        <br/>
+        <h:outputLabel for="sobrenome" value="Sobrenome:" />
+        <h:inputText id="sobrenome" value="#{pessoaBean.pessoa.sobrenome}" required="true" />
+        <br/>
+        <h:outputLabel for="telefone" value="Telefone:" />
+        <h:inputText id="telefone" value="#{pessoaBean.pessoa.telefone}" required="true" />
+        <br/>
+        <h:outputLabel for="email" value="Email:" />
+        <h:inputText id="email" value="#{pessoaBean.pessoa.email}" required="true" />
+        <br/>
+        <h:outputLabel for="endereco" value="Endereço:" />
+        <h:inputText id="endereco" value="#{pessoaBean.pessoa.endereco}" required="true" />
+        <br/>
+        <h:commandButton value="Enviar" action="#{pessoaBean.adicionarPessoa}" />
+    </h:form>
+</h:body>
+</html>
